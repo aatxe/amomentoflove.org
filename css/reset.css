@@ -1,0 +1,333 @@
+/*
+	super awesome css reset
+	compiled by vladh (vladh.net)
+	additional credits:
+	
+	CSS Reset by Eric Meyer			http://meyerweb.com/eric/tools/css/reset/
+		Public Domain 		
+	960 Grid System ~ Text CSS		http://960.gs/
+		Licensed under GPL and MIT.
+		
+	I'm going to write these comments in a semantic manner, to guide
+	you through what the CSS is actually doing.
+*/
+
+/*					PLEASE READ THE SOURCE!
+			  THERE ARE SOME AWESOME CLASSES BELOW, AND
+			YOU'LL WANT TO USE THEM BECAUSE THEY'RE AWESOME
+*/
+
+/*
+	Alright, so first of all we need to get a bunch of elements and reset
+	some common attributes.
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/*
+	Let's set some classes that you'll be using a lot.
+	Please remember to change the loud and quiet colors with the rest.
+*/
+	
+.small {
+	font-size:.85em;
+	margin-bottom:1.875em;
+	line-height:1.875em;
+}
+.large {
+	font-size:1.2em;
+	line-height:2.5em;
+	margin-bottom:1.25em;
+}
+
+.quiet {
+	color:#666;
+}
+.loud {
+	color:#000;
+}
+
+.hide {
+	display:none;
+}
+
+/*
+	Now, let's set some basic colors and fonts. These are some great fonts, and I'm
+	giving you two choices - sans-serif, which is default, or serif. Remember, these
+	are for body copy, we're going to set fonts for headers later on.
+*/
+body {
+	background:white;	
+}
+body, input, textarea{
+	color:#222;
+	/* sans */
+	font: 13px/1.5 "Lucida Sans Unicode","Lucida Grande","Trebuchet MS",Helvetica,Arial,sans-serif; 
+	/* serif */
+	/* font: 13px/1.5 Georgia, serif; */
+}
+
+/*
+	Alright, let's set some styling for anchors. We want them to inherit the color from the body
+	(beware - this doesn't work in IE), and give it an underline.
+*/
+a{
+	color:inherit;
+	text-decoration:underline;
+}
+
+/*
+	A horizontal rule (hr) is a useful separator, so let's give it some basic styling.
+*/
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+	margin:1em 0;
+}
+
+/*
+	Lists - we need to make them actually work, because we kind of broke them with the global reset
+	at the top. We set different styles depending on the depth of the list - check them out!
+*/
+ul {
+	margin: 0 0 1em 2.5em;
+	list-style:disc;
+}
+ol {
+	margin: 0 0 1.5em 2.5em;
+	list-style-type: decimal;
+}
+ol ol {
+	list-style:upper-alpha;
+}
+ol ol ol {
+	list-style:lower-roman;
+}
+ol ol ol ol {
+	list-style:lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom:0;
+}
+
+/* definition lists need some love as well */
+dl	{
+	margin:0 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+
+/*
+	Quotes
+*/
+blockquote {
+	margin: 0 3em;
+}
+blockquote, q {
+	quotes: "Ç" "È" "'" "'";
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*
+	We need to make sure we set focus styles for people with screen readers and people
+	that press the tab key a lot - it's essential for usability.
+*/
+:focus {
+	outline: 0;
+}
+a:focus {
+	outline: 1px dotted;
+}
+
+/*
+	You may want to use something completely different for ins, but del is your basic
+	line-through text.
+*/
+ins {
+	text-decoration: none;
+	padding:2px;
+	background:#f0f0f0;
+}
+del {
+	text-decoration: line-through;
+}
+
+/*
+	Your usual strong and italic text.
+*/
+strong, b{
+	font-weight:bold;
+}
+em, cite, i{
+	font-style:italic;
+}
+
+/*
+	Superscript and subscript. There are probably a lot of ways to set these, but
+	this is a pretty simple one that works nicely.
+*/
+sup, sub{
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+}
+sup {
+	top: -0.4em;
+}
+sub {
+	bottom: -0.4em;
+}
+
+/*
+	You should try out fieldsets, not many people use them, but you'll understand the CSS
+	below if you do this in your HTML.
+		<fieldset>
+			<legend>Hey</legend>
+			What's up?
+		</fieldset>
+*/
+fieldset{
+	border:1px #aaa solid;
+	padding:10px;
+	margin-bottom: 1em;
+}
+legend{
+	padding:5px;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+
+/*
+	We just need to make sure images have no border and are aligned to the middle.
+*/
+img{
+	border:0;
+	vertical-align:middle;
+}
+
+/*
+	Default table styling. Nothing interesting here, except for the fact that we set
+	a darker background for the table heading. If you want a proper reset, tables still
+	need 'cellspacing="0"' in the markup.
+*/
+/*  */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-bottom: 1em;
+}
+th{
+	background:#eee;
+	border:1px white solid;
+}
+
+/*
+	Standard margin for paragraphs, this really comes in handy.
+*/
+p {
+	margin-bottom: 1em;
+}
+
+/*
+	Headings. Not only do we set sizes for them, we also give them some
+	damn sexy fonts!
+*/
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 19px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: Myriad Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+	margin-top: 0.25em;
+	margin-bottom: 0.5em;
+	font-weight:normal;
+}
+
+/*
+	pre and code get a standard monospaced font.
+*/
+pre {
+	font: 11px Monaco, Consolas, monospace;
+	margin-bottom: 1em;
+}
+code {
+	font: 11px Monaco, Consolas, monospace;
+}
+
+/*
+	abbr and acronym need to stand out a bit so they get a subtle bottom border and a help cursor.
+*/
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+/*
+	Just some margin for address.
+*/
+address{
+	margin-bottom: 1em;
+}
+
+/*
+	Everyone needs a clearfix! Here is a link to tell you all about it:
+	http://perishablepress.com/press/2009/12/06/new-clearfix-hack
+*/
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

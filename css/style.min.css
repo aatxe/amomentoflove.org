@@ -1,0 +1,79 @@
+html, body, #container, .frame {
+	background-color: #ECF0F1;
+	text-transform: lowercase;
+	height: 100%;
+	width: 100%;
+	font-size: 24px;
+}
+
+#container {
+	overflow: hidden;
+}
+
+.frame {
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+
+.slow-hack {
+	transition: opacity 1.5s linear;
+}
+
+.current {
+	opacity: 1;
+	transition: opacity 1s linear;
+	z-index: 1;
+}
+
+/*
+ * All of the stuffs for making circles is below.
+ */
+ 
+.circle {
+	width: 5em;
+	height: 5em;
+	border-radius: 100em;
+}
+
+.big {
+	width: 10em !important;
+	height: 10em !important;
+}
+
+.small {
+	width: 1em !important;
+	height: 1em !important;
+}
+
+.red {
+	background-color: #E74C3C;
+}
+
+/* 
+ * All the style stuff for individual sections of frames is below.
+ */
+ 
+.center, .top, .bottom {
+	text-align: center;
+	width: 100%;
+}
+ 
+.center {
+	position: absolute;
+	top: 50%;
+	margin-top: -1em;
+}
+
+.top {
+	position: absolute;
+	top: 20%;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 20%;
+}
+
+.bad {
+	color: #C0392B;
+}
