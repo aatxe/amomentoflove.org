@@ -3,7 +3,8 @@ $(function() {
 		$doc = $(document),
 		$html = $('html'),
 		$body = $('body'),	
-		$container = $('#container');
+		$container = $('#container'),
+		$music = $('#music');
 		
 	$doc.on('keydown', function(event) {
 		if (event.which == 32) {
@@ -20,8 +21,9 @@ $(function() {
 			return;
 		
 		if ($next.hasClass('start-music')) {
-			document.getElementById('music').play();
-			$('music').animate({volume: 100}, 500);
+			$music[0].volume = 0;
+			$music[0].play();
+			$music.animate({volume: 1}, 2000);
 		}
 			
 		if (Modernizr.csstransitions) {
