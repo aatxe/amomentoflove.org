@@ -1,4 +1,5 @@
 html, body, #container, .frame {
+	font-family: 'Segoe UI', 'Myriad Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #ECF0F1;
 	text-transform: lowercase;
 	height: 100%;
