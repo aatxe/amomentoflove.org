@@ -16,6 +16,10 @@ $(function() {
 			$current = $container.find('.current'),
 			$next = $frame.eq($current.index() + 1);
 			
+		if ($current.hasClass('final'))
+			return;
+		
+			
 		if (Modernizr.csstransitions) {
 			$current.removeClass('current').addClass('spent');
 			$next.addClass('current');

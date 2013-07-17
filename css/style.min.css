@@ -6,6 +6,10 @@ html, body, #container, .frame {
 	font-size: 24px;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 #container {
 	overflow: hidden;
 }
@@ -30,23 +34,49 @@ html, body, #container, .frame {
  */
  
 .circle {
-	width: 5em;
-	height: 5em;
-	border-radius: 100em;
+	width: 3em;
+	height: 3em;
+	-moz-border-radius: 50em;
+	-webkit-border-radius: 50em;
+	border-radius: 50em;
+	margin-top: -0.75em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	display: inline-block;
 }
 
 .big {
-	width: 10em !important;
-	height: 10em !important;
+	width: 6em !important;
+	height: 6em !important;
+	margin-top: -1.5em !important;
 }
 
 .small {
-	width: 1em !important;
-	height: 1em !important;
+	width: 0.5em !important;
+	height: 0.5em !important;
+	margin-top: 0 !important;
+	margin-left: 0.1em !important;
+	margin-right: 0.1em !important;
 }
 
 .red {
-	background-color: #E74C3C;
+	background: #E74C3C !important;
+}
+
+.black {
+	background: #2C3E50 !important;
+}
+
+.off-black {
+	background: #566474 !important;
+}
+
+.blue {
+	background: #3498DB !important;
+}
+
+.purple {
+	background: #9B59B6 !important;
 }
 
 /* 
@@ -64,16 +94,87 @@ html, body, #container, .frame {
 	margin-top: -1em;
 }
 
+.line {
+	display: block;
+	margin-top: -1.75em;
+}
+
 .top {
 	position: absolute;
-	top: 20%;
+	top: 25%;
 }
 
 .bottom {
 	position: absolute;
-	bottom: 20%;
+	bottom: 25%;
+}
+
+.shift-up {
+	margin-top: -3em;
+}
+
+.shift-down {
+	margin-top: 1em;
+}
+
+.small-text {
+	font-size: 0.5em;
 }
 
 .bad {
 	color: #C0392B;
+}
+
+/*
+ * All the stuffs for the final page follows.
+ */
+
+.header, .footer {
+	width: 100%;
+	font-size: 0.75em;
+	position: absolute;	
+}
+
+.header {
+	top: 0;
+}
+
+.footer {
+	bottom: 0;
+}
+
+.header .left, .footer .left {
+	float: left;
+	margin-left: 0.5em;
+}
+
+.header .right, .footer .right {
+	float: right;
+	margin-right: 0.5em;
+}
+
+.page {
+	width: 100%;
+	position: absolute;
+	top: 4em;
+	font-size: 14px;
+}
+
+.body {
+	width: 70%;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+.body .column {
+	text-align: justify;
+	width: 45%;
+}
+
+.body .left {
+	float: left;
+}
+
+.body .right {
+	float: right;
 }
