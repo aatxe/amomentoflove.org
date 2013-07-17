@@ -117,8 +117,16 @@ a:hover {
 	margin-top: 1em;
 }
 
+.large-text {
+	font-size: 5em;
+}
+
 .small-text {
 	font-size: 0.5em;
+}
+
+.love {
+	color: #E74C3C;
 }
 
 .bad {
@@ -182,5 +190,4 @@ a:hover {
 #social {
 	position: relative;
 	top: 0.5em;
-	left: 1.5em;
 }
