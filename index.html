@@ -9,9 +9,8 @@
     	<link href="css/reset.min.css" rel="stylesheet" media="screen">
     	<link href="css/style.min.css" rel="stylesheet" media="screen">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 		<script src="js/modernizer.min.js"></script>
-		<script src="js/mol.js"></script>
+		<script src="js/mol.min.js"></script>
 	</head>
 	<body>
 		<section id="container">
@@ -220,9 +219,14 @@
 				<section class="header">
 					<span class="left">The Moment of Love Project</span>
 					<span class="right" id="social">
-						<span class="twitter">
-							<a href="https://twitter.com/share" class="twitter-share-button" data-text="Spread the love!" data-via="aaronweiss74" data-hashtags="momentoflove">Tweet</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<div class="addthis_toolbox addthis_default_style">
+							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+							<a class="addthis_button_tweet"></a>
+							<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+						</div>
+						<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51e6089d1eebb568">var addthis_share = {templates:{twitter: 'Share the love! {{url}} #momentoflove via @aaronweiss74'}}</script>
+						<!-- AddThis Button END -->
+						
 						</span>
 						<g:plusone size="medium"></g:plusone>
 					</span>
