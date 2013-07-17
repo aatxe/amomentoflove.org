@@ -23,6 +23,13 @@ $(function() {
 		if (Modernizr.csstransitions) {
 			$current.removeClass('current').addClass('spent');
 			$next.addClass('current');
+		} else {
+			if ($current.hasClass('slow-hack')) {
+				$current.css({ opacity: 1 }).removeClass('current').animate({ opacity: 0 }, 1500);
+			} else {
+				$current.css({ opacity: 1 }).removeClass('current').animate({ opacity: 0 }, 500);
+			}
+			$next.css({ opacity: 0 }).addClass('current').animate({ opacity: 1 }, 1000);
 		}
 	});
 });
