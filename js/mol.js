@@ -12,6 +12,10 @@ $(function() {
 		};
 	});
 	
+	$doc.on('touchstart', function(event) {
+		$window.trigger('advance');
+	});
+	
 	$window.on('advance', function() {
 		var $frame = $container.find('.frame'),
 			$current = $container.find('.current'),
