@@ -21,7 +21,7 @@ $(function() {
 		
 		if ($next.hasClass('start-music')) {
 			document.getElementById('music').play();
-			$('music').animate({volume: newVolume}, 500);
+			$('music').animate({volume: 100}, 500);
 		}
 			
 		if (Modernizr.csstransitions) {
