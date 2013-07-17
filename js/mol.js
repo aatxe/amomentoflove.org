@@ -19,6 +19,8 @@ $(function() {
 		if ($current.hasClass('final'))
 			return;
 		
+		if ($next.hasClass('start-music'))
+			document.getElementById('music').play();
 			
 		if (Modernizr.csstransitions) {
 			$current.removeClass('current').addClass('spent');
