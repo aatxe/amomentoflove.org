@@ -51,6 +51,10 @@ a:hover {
 	display: inline-block;
 }
 
+.outline {
+	border: 0.5em solid black;
+}
+
 .big {
 	width: 6em !important;
 	height: 6em !important;
@@ -66,22 +70,27 @@ a:hover {
 }
 
 .red {
+	border-color: #E74C3C !important;
 	background: #E74C3C !important;
 }
 
 .black {
+	border-color: #2C3E50 !important;
 	background: #2C3E50 !important;
 }
 
 .off-black {
+	border-color: #566474 !important;
 	background: #566474 !important;
 }
 
 .blue {
+	border-color: #3498DB !important;
 	background: #3498DB !important;
 }
 
 .purple {
+	border-color: #9B59B6 !important;
 	background: #9B59B6 !important;
 }
 
