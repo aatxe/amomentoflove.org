@@ -147,14 +147,17 @@ a:hover {
 
 .shift-up {
 	margin-top: -3em;
+	margin-bottom: 1em;
 }
 
 .big-shift-down {
 	margin-top: 2.5em;
+	margin-bottom: -2.5em;
 }
 
 .shift-down {
 	margin-top: 1em;
+	margin-bottom: -1em;
 }
 
 .large-text {
