@@ -57,8 +57,8 @@ a:hover {
 }
 
 .big {
-	width: 6em !important;
-	height: 6em !important;
+	width: 4.5em !important;
+	height: 4.5em !important;
 	margin-top: -1.5em !important;
 }
 
@@ -93,6 +93,26 @@ a:hover {
 .purple {
 	border-color: #9B59B6 !important;
 	background: #9B59B6;
+}
+
+.orange {
+	border-color: #E67E22 !important;
+	background: #E67E22;
+}
+
+.green {
+	border-color: #2ECC71 !important;
+	background: #2ECC71;
+}
+
+.yellow {
+	border-color: #F1C40F !important;
+	background: #F1C40F;
+}
+
+.grey {
+	border-color: #7F8C8D !important;
+	background: #7F8C8D;
 }
 
 /* 
