@@ -53,6 +53,7 @@ a:hover {
 
 .outline {
 	border: 0.5em solid black;
+	background: inherit !important;
 }
 
 .big {
