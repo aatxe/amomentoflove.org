@@ -32,6 +32,14 @@ $(function() {
 				$music.type= 'audio/ogg';
 				$music.src= '/music.ogg';
 			}
+      if (typeof $music.loop == 'boolean') {
+        $music.loop = true;
+      } else {
+        $music.addEventListener('ended', function() {
+          this.currentTime = 0;
+          this.play();
+        }, false);
+      }
 			$music.volume = 0;
 			$music.play();
 			$($music).animate({volume: 1}, 2000);
