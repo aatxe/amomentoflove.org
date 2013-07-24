@@ -5,7 +5,16 @@ $(function() {
 		$body = $('body'),	
 		$container = $('#container'),
 		$music = new Audio();
-		
+
+	if ($music.canPlayType('audio/mpeg;')) {
+		$music.type= 'audio/mpeg';
+		$music.src= '/music.mp3';
+	} else {
+		$music.type= 'audio/ogg';
+		$music.src= '/music.ogg';
+	}
+	$music.volume = 0;
+
 	$doc.on('keydown', function(event) {
 		if (event.which == 32) {
 			$window.trigger('advance');
@@ -23,16 +32,8 @@ $(function() {
 			
 		if ($current.hasClass('final'))
 			return;
-		
+
 		if ($next.hasClass('start-music')) {
-			if ($music.canPlayType('audio/mpeg;')) {
-				$music.type= 'audio/mpeg';
-				$music.src= '/music.mp3';
-			} else {
-				$music.type= 'audio/ogg';
-				$music.src= '/music.ogg';
-			}
-			$music.volume = 0;
 			$music.play();
 			$($music).animate({volume: 1}, 2000);
 		}
