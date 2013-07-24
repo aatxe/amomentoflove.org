@@ -4,7 +4,7 @@ $(function() {
 		$html = $('html'),
 		$body = $('body'),	
 		$container = $('#container'),
-		$music = $('#music');
+		$music = new Audio();
 		
 	$doc.on('keydown', function(event) {
 		if (event.which == 32) {
@@ -25,11 +25,18 @@ $(function() {
 			return;
 		
 		if ($next.hasClass('start-music')) {
-			$music[0].volume = 0;
-			$music[0].play();
-			$music.animate({volume: 1}, 2000);
+			if ($music.canPlayType('audio/mpeg;')) {
+				$music.type= 'audio/mpeg';
+				$music.src= '/music.mp3';
+			} else {
+				$music.type= 'audio/ogg';
+				$music.src= '/music.ogg';
+			}
+			$music.volume = 0;
+			$music.play();
+			$($music).animate({volume: 1}, 2000);
 		}
-			
+
 		if (Modernizr.csstransitions) {
 			$current.removeClass('current').addClass('spent');
 			$next.addClass('current');
