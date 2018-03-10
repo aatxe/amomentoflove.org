@@ -2,7 +2,7 @@ $(function() {
   var $window = $(window),
       $doc = $(document),
       $html = $('html'),
-      $body = $('body'),	
+      $body = $('body'),
       $container = $('#container'),
       $music = new Audio();
 
@@ -20,7 +20,7 @@ $(function() {
           $window.trigger('advance');
       };
 	});
-	
+
     $doc.on('touchstart', function(event) {
         $window.trigger('advance');
     });
@@ -29,7 +29,7 @@ $(function() {
         var $frame = $container.find('.frame'),
             $current = $container.find('.current'),
             $next = $frame.eq($current.index() + 1);
-			
+
         if ($current.hasClass('final'))
             return;
 

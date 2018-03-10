@@ -38,7 +38,7 @@ a:hover {
 /*
  * All of the stuffs for making circles is below.
  */
- 
+
 .circle {
 	width: 3em;
 	height: 3em;
@@ -115,15 +115,15 @@ a:hover {
 	background: #7F8C8D;
 }
 
-/* 
+/*
  * All the style stuff for individual sections of frames is below.
  */
- 
+
 .center, .top, .bottom {
 	text-align: center;
 	width: 100%;
 }
- 
+
 .center {
 	position: absolute;
 	top: 50%;
@@ -183,7 +183,7 @@ a:hover {
 .header, .footer {
 	width: 100%;
 	font-size: 0.75em;
-	position: absolute;	
+	position: absolute;
 }
 
 .header {

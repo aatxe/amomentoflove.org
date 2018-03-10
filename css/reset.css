@@ -2,12 +2,12 @@
 	super awesome css reset
 	compiled by vladh (vladh.net)
 	additional credits:
-	
+
 	CSS Reset by Eric Meyer			http://meyerweb.com/eric/tools/css/reset/
-		Public Domain 		
+		Public Domain
 	960 Grid System ~ Text CSS		http://960.gs/
 		Licensed under GPL and MIT.
-		
+
 	I'm going to write these comments in a semantic manner, to guide
 	you through what the CSS is actually doing.
 */
@@ -43,7 +43,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	Let's set some classes that you'll be using a lot.
 	Please remember to change the loud and quiet colors with the rest.
 */
-	
+
 .small {
 	font-size:.85em;
 	margin-bottom:1.875em;
@@ -72,7 +72,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	are for body copy, we're going to set fonts for headers later on.
 */
 body {
-	background:white;	
+	background:white;
 }
 body, input, textarea{
 	color:#222;
